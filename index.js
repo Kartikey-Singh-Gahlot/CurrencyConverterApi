@@ -36,5 +36,10 @@ app.get("/currency/rates", async (req, res)=>{
    }
 });
 
+app.get("/currency/all", async (req, res)=>{
+  let data = await currencyModel.find({});
+  res.send(data);
+});
+
 
 module.exports = app;
