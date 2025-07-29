@@ -37,4 +37,4 @@ app.get("/currency/rates", async (req, res)=>{
 });
 
 
-app.listen(8080);
+module.exports = app;
