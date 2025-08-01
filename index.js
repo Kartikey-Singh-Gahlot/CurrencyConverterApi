@@ -24,8 +24,8 @@ app.get("/currency/rates", async (req, res)=>{
    let {c1,c2,q} = req.query;
    let one  = await currencyModel.find({currencyCode:c1.toUpperCase()});
    let two = await currencyModel.find({currencyCode:c2.toUpperCase()});
-   if(c2 == 'USD'){
-     res.send({ rate : q*(one[0].rate)});
+   if(c2.toUpperCase() == 'USD'){
+     res.send({ rate : q/(one[0].rate)});
    }
    else if (c1 == c2){
      res.send({rate :q});
