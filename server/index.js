@@ -6,6 +6,7 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({origin:true}));
+//added cors
 
 
 async function setConnection(){
