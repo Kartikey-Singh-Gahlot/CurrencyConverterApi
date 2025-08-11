@@ -5,8 +5,12 @@ const currencyModel = require("./models/currencyData.js");
 require("dotenv").config();
 const app = express();
 
-app.use(cors({origin:true}));
-//added cors
+app.use(cors({
+  origin: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 
 
 async function setConnection(){
