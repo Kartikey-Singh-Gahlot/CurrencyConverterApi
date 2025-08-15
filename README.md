@@ -34,5 +34,5 @@ A simple REST API to convert between different currencies using real-time exchan
 
   
 ##### Response 
-- { "from": "USD", "to": "INR", "quantity": 10, "rate": 82.75, "converted_amount": 827.5 }
+- { "rate": 827.5 }
 
