@@ -26,7 +26,7 @@ A simple REST API to convert between different currencies using real-time exchan
 
 ### Currency Conversion
 #### Method: POST
-##### [https://kartzcurrencyconverterapi.vercel.app/currency?c1=currency1&c2=currency2&q=quantity ](https://kartzcurrencyconverterapi.vercel.app/currency?c1=currency1&c2=currency2&q=quantity )
+##### [https://kartzcurrencyconverterapi.vercel.app/currency/rates?c1=currency1&c2=currency2&q=quantity ](https://kartzcurrencyconverterapi.vercel.app/currency?c1=currency1&c2=currency2&q=quantity )
 ##### Paramerters
 - c1: Source currency code (e.g., USD)
 - c2: Target currency code (e.g., INR)
