@@ -21,7 +21,7 @@ A simple REST API to convert between different currencies using real-time exchan
 #### Method: GET
 ##### [https://kartzcurrencyconverterapi.vercel.app/currency/all](https://kartzcurrencyconverterapi.vercel.app/currency/all) 
 ##### Response : 
-- { "USD": 1, "EUR": 0.91, "GBP": 0.78 }
+{ "USD": 1, "EUR": 0.91, "GBP": 0.78 }
   
 
 ### Currency Conversion
@@ -34,5 +34,5 @@ A simple REST API to convert between different currencies using real-time exchan
 
   
 ##### Response 
-- { "rate": 827.5 }
+{ "rate": 827.5 }
 
