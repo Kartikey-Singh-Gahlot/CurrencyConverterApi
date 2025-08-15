@@ -3,7 +3,7 @@
 A simple REST API to convert between different currencies using real-time exchange rates.
 
 ## Live Demo
-[View it live on Vercel](https://kartzcurrencyconverterapi.vercel.app)
+[Base URL](https://kartzcurrencyconverterapi.vercel.app)
 
 ## Features
 - Convert amounts between supported currencies
@@ -15,11 +15,10 @@ A simple REST API to convert between different currencies using real-time exchan
 - External API provider for rates (please specify)
 - Hosted on Vercel
 
-## Getting Started
+## EndPoints
 
+### Get All Currency Rates
+#### Method: GET
+##### URL : https://kartzcurrencyconverterapi.vercel.app/currency/all 
+##### Response : {  "USD": 1, "EUR": 0.91, "GBP": 0.78 }
 
-### Installation
-```bash
-git clone https://github.com/Kartikey-Singh-Gahlot/CurrencyConverterApi.git
-cd CurrencyConverterApi
-npm install
