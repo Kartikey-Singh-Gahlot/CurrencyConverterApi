@@ -11,8 +11,8 @@ A simple REST API to convert between different currencies using real-time exchan
 
 ## Tech Stack
 - Node.js
-- Express.js (assumed—please confirm)
-- External API provider for rates (please specify)
+- Express.js
+- MongoDb
 - Hosted on Vercel
 
 ## EndPoints
