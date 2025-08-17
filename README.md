@@ -2,8 +2,8 @@
 
 A simple REST API to convert between different currencies using real-time exchange rates.
 
-## Live Demo
-[Base URL](https://kartz-currency-converter-api-fronte.vercel.app/)
+## Demo Site
+[FrontEnd](https://kartz-currency-converter-api-fronte.vercel.app/)
 
 ## Features
 - Convert amounts between supported currencies
