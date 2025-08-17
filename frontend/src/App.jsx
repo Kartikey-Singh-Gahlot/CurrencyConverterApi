@@ -18,7 +18,7 @@ export default function App(){
   useEffect(()=>{
     async function getAll(){
         let URL ="";
-        let un = await fetch("https://kartzcurrencyconverterapi.vercel.app/currency/all");
+        let un = await fetch("https://currency-converter-api-psi.vercel.app/currency/all");
         let pr = un.json();
         let codes = "";
         pr.then((result)=>{
@@ -32,7 +32,7 @@ export default function App(){
 
   async function trgrSubmit(e){
     e.preventDefault();
-    let un = await fetch(`https://kartzcurrencyconverterapi.vercel.app/currency/rates?c1=${e.target.c1.value}&c2=${e.target.c2.value}&q=${e.target.q.value}`);
+    let un = await fetch(`https://currency-converter-api-psi.vercel.app/currency/rates?c1=${e.target.c1.value}&c2=${e.target.c2.value}&q=${e.target.q.value}`);
     
     let pr = (await un.json()).data;
     setVal(`${formData.q} ${formData.c1.toUpperCase()} = ${pr.rate} ${formData.c2.toUpperCase()}`);
