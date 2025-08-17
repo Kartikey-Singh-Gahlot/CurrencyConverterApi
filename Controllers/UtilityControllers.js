@@ -1,3 +1,5 @@
+const currencyModel = require('../Models/Rates')
+
 const fetchRate = async (req, res)=> {
      let {c1,c2,q} = req.query;
      let one  = await currencyModel.find({currencyCode:c1.toUpperCase()});
