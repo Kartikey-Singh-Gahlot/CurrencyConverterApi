@@ -21,7 +21,10 @@ A simple REST API to convert between different currencies using real-time exchan
 #### Method: GET
 ##### [https://currency-converter-api-psi.vercel.app/currency/all](https://currency-converter-api-psi.vercel.app/currency/all) 
 ##### Response : 
-{ "USD": 1, "EUR": 0.91, "GBP": 0.78 }
+{ 
+"sccsess": true, 
+"data":[{"USD": 1 }]
+}
   
 
 ### Currency Conversion
