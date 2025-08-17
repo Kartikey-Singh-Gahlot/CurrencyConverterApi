@@ -25,16 +25,16 @@ const fetchRate = async (req, res)=> {
 
 const fetchAll = async (req, res)=>{
       let dt = await currencyModel.find({});
-      if(dt){
-        res.status(200).json({
-        success : true,
-        data : { rate : q*r }
-       })
-      }
-       else{
+      if(dt.length>0){
         res.status(200).json({
         success : true,
         data : dt
+       })
+      }
+       else{
+        res.status(400).json({
+        success : false,
+        data : "cannot fetch data"
        })
        }
     
