@@ -1,0 +1,43 @@
+const fetchRate = async (req, res)=> {
+     let {c1,c2,q} = req.query;
+     let one  = await currencyModel.find({currencyCode:c1.toUpperCase()});
+     let two = await currencyModel.find({currencyCode:c2.toUpperCase()});
+     if(c2.toUpperCase() == 'USD'){
+       res.status(200).json({
+        success : true,
+        data : { rate : q/(one[0].rate )}
+       })
+     }
+     else if (c1 == c2){
+       res.status(200).json({
+        success : true,
+        data : { rate : q }
+       })
+     }
+     else{
+       let r = two[0].rate/ one[0].rate;
+       res.status(200).json({
+        success : true,
+        data : { rate : q*r }
+       })
+     }
+}
+
+const fetchAll = async (req, res)=>{
+      let dt = await currencyModel.find({});
+      if(dt){
+        res.status(200).json({
+        success : true,
+        data : { rate : q*r }
+       })
+      }
+       else{
+        res.status(200).json({
+        success : true,
+        data : dt
+       })
+       }
+    
+}
+
+module.exports = {fetchRate, fetchAll}
