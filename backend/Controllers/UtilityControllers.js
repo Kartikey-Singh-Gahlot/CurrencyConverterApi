@@ -26,7 +26,7 @@ const fetchRate = async (req, res)=> {
 }
 
 const fetchAll = async (req, res)=>{
-      let dt = await currencyModel.find({});
+      let dt = await currencyModel.find({},{"currencyCode":1, "rate":1, "_id":0 });
       if(dt.length>0){
         res.status(200).json({
         success : true,
