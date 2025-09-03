@@ -18,7 +18,7 @@ export default function App(){
   useEffect(()=>{
     async function getAll(){
         let URL ="https://kartz-currency-converter-api.vercel.app";
-        let un = await fetch(`${URL}/currency/all");
+        let un = await fetch( `${URL}/currency/all`);
         let pr = un.json();
         let codes = "";
         pr.then((result)=>{
