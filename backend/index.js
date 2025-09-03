@@ -6,7 +6,8 @@ const Routes = require('./Routes/Routes.js');
 require('./Models/DB.js');
 
 
-app.use(cors({ origin: true } ) );
+app.use(cors({ origin: "*" }));
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
