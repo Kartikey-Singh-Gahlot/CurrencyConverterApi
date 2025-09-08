@@ -1,6 +1,6 @@
 # Currency Converter API
 
-A simple REST API to convert between different currencies using real-time exchange rates.
+A simple REST API to convert between different currencies using real-time exchange rates. It enables developers to fetch up-to-date exchange rates and perform quick conversions between different currencies with ease. Built on the MVC architecture, this project ensures modularity, scalability, and maintainability, making it suitable for both small-scale applications and larger financial platforms.
 
 ## Demo Site
 [FrontEnd](https://kartz-currency-converter-api-fronte.vercel.app/)
